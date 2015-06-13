@@ -15,6 +15,7 @@ $map = array(
 );
 
 $path = $request->getPathInfo();
+
 if (isset($map[$path])) {
 	require $map[$path];
 } else {
